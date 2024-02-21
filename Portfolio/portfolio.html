@@ -4,102 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khanya Somagaca Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: lightgrey;
+            padding: 20px 0;
+            overflow: hidden; /* Clear floats */
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        header h1 {
+            color: #160909;
+            margin: 0;
+            font-size: 36px;
+            float: left;
+        }
+        
+        nav {
+            float: right;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #160909;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        section h2 {
+            margin-top: 0;
+        }
+        
+        .container ul {
+            padding: 0;
+        }
+        
+        .container ul li {
+            margin-bottom: 10px;
+        }
+        
+        #instagramImg {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            float: right;
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: lightgrey;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ccc;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        #scrollToTop:hover {
+            background-color: #999;
+        }
+        </style>
 </head>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: lightgrey;
-    padding: 20px 0;
-    overflow: hidden; /* Clear floats */
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header h1 {
-    color: #160909;
-    margin: 0;
-    font-size: 36px;
-    float: left;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #160909;
-    text-decoration: none;
-}
-
-section {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-.container ul {
-    padding: 0;
-}
-
-.container ul li {
-    margin-bottom: 10px;
-}
-
-#instagramImg {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    float: right;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: lightgrey;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer nav {
-    display: flex;
-    justify-content: center;
-}
-
-#scrollToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ccc;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#scrollToTop:hover {
-    background-color: #999;
-}
-</style>
 <body>
     <header>
         <div class="container">
@@ -136,6 +135,7 @@ footer nav {
             <li>Hair product beauty store</li>
             <li>Medical intelligence System</li>
             <li>Dood delivery system</li>
+            <img id="instagramImg" src="images/me.jpg" alt="picture">
 
             <!-- Include images or descriptions of projects -->
         </div>
@@ -148,8 +148,7 @@ footer nav {
                 <li>Email: khanya.somagaca@capaciti.org.za</li>
                 <li>Physical Address: 97 Durham street, Salt river, Cape Town</li>
                 <li>Facebook: <a href="https://www.facebook.com/khanya.somagaca">Khanya Somagaca</a></li>
-                <li>instagram: <a href="https://www.instagram.com/khanya.somagaca">Khanya Somagaca</a></li>
-                <img id="instagramImg" src="https://instagram.com/p/BM2uV4QB1uJ/" alt="Instagram">
+                <li>Instagram: <a href="https://www.instagram.com/khanya.somagaca">Khanya Somagaca</a></li>
             </ul>
         </div>
     </section>
