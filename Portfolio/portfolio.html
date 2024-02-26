@@ -11,11 +11,22 @@
             font-family: Arial, sans-serif;
         }
         
+     
         header {
-            background-color: lightgrey;
-            padding: 20px 0;
-            overflow: hidden; 
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: lightgrey;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 20px 0;
+    overflow: hidden; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
         
         .container {
             width: 80%;
@@ -127,7 +138,6 @@ span{
         } 
         nav ul li a:hover{
     color: blue;
-
 }
 .images{
     width: 45%;
@@ -154,8 +164,29 @@ span{
 body{
     background-color: #555;
 }
+.images{
+    background-image: url("images/BackP.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
 
-        </style>
+</style>
        
 </head>
 <body>
@@ -177,18 +208,18 @@ body{
     <div class="detel">
         <h1>
             I am <span> Khanya Somagaca</span></h1>
-            <p>This is my official portfolio website to show all
+            <h3>This is my official portfolio website to show all
                 <br> Details and work experience in web development
-            </p>
+            </h3>
             <a href="khanya_cv.pdf" download>Download CV</a>
     </div>
-    <br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br> <br><br><br><br><br><br><br><br><br><br><br><br>  <br><br> <br><br><br>
     <div class = "images">
         <img src="images/me.jpg" class = "me">
     </div>
     <br><br>
     <section id="about">
-        <div class="container">
+        <div class="container"> 
             <br><br>
             <h2>About Me</h2>
             <p>Hey everyone, I'm Khanya Somagaca, and I'm thrilled to share a bit about myself with you. I recently graduated from Walter Sisulu University, where I focused my studies on ICT in Application Development. It's been an incredible journey delving into the world of technology and learning how to create software that can make a real impact.
@@ -232,7 +263,7 @@ body{
             <a href="#home">Home</a> |
             <a href="#about">About</a> |
             <a href="#portfolio">Portfolio</a> |
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a> |
             <a href="#portfolio">Hire me</a> |
         
     </footer>
